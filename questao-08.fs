@@ -5,9 +5,19 @@
 \ DEFINIÇÕES
 \ ==============================================================================
 
-: sign' ;
-: sum ;
-: has-zero ;
+: sign' ( n -- s )
+  dup 0 > if drop 1 exit then
+  0 < if -1 else 0 then ;
+
+: sum ( ... n -- soma )
+  0 swap
+  ?do + loop ;
+
+: has-zero ( ... -- ... flag )
+  depth 0 swap
+  ?do
+    i 1+ pick 0= if drop -1 leave then
+  loop ;
 
 \ ==============================================================================
 \ TESTE
