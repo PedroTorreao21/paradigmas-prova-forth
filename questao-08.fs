@@ -10,7 +10,7 @@
 : has-zero ;
 
 \ ==============================================================================
-\ TESTES
+\ TESTE
 \ ==============================================================================
 \ Não esqueça de apagar ou comentar código fora das definições antes de enviar 
 \ a submissão final ou rodar os testes usando o pytest.
